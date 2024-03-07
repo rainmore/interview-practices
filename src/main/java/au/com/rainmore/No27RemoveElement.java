@@ -7,8 +7,8 @@ import java.util.Arrays;
 
 /**
  * <a href="https://leetcode.com/problems/remove-element/description/?envType=study-plan-v2&envId=top-interview-150">
- *     27. Remove Element</a>
- *
+ * 27. Remove Element</a>
+ * <p>
  * Note: the output of Example 2 `nums = [0,1,4,0,3,_,_,_]` is wrong.
  * The correct value is `nums = [0,1,3,0,4,_,_,_]`
  */
