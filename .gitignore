@@ -1,0 +1,13 @@
+build/
+.history
+dist/
+/.idea
+/*.iml
+/*.ipr
+/*.iws
+/out
+/.idea_modules
+/.classpath
+/.project
+.settings/
+.gradle/
