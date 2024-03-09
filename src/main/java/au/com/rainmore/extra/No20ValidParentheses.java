@@ -58,6 +58,4 @@ public class No20ValidParentheses {
         return st1.isEmpty();
     }
 
-
-
 }
