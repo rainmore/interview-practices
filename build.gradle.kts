@@ -5,7 +5,7 @@ plugins {
 
 group = "au.com.rainmore"
 version = "1.0.0"
-description = "Hacker Rank Practice"
+description = "Interview Setup"
 
 allprojects {
     repositories {
@@ -23,7 +23,7 @@ java {
 }
 
 application {
-    mainClass.set(listOf(project.group.toString(), "TestJava").joinToString("."))
+    mainClass.set(listOf(project.group.toString(), "Application").joinToString("."))
 }
 
 tasks.run.configure {
@@ -40,5 +40,3 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
-
-sourceSets.main.get().java.srcDirs.clear()
