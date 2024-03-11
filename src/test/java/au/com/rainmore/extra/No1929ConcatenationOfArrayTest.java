@@ -1,6 +1,5 @@
 package au.com.rainmore.extra;
 
-import au.com.rainmore.extra.No21MergeTwoSortedLists.ListNode;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

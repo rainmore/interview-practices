@@ -1,4 +1,4 @@
-package au.com.rainmore.extra;
+package au.com.rainmore.linkedLists;
 
 import au.com.rainmore.extra.data.ListNode;
 import org.junit.jupiter.api.Test;

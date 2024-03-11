@@ -1,5 +1,6 @@
-package au.com.rainmore.extra;
+package au.com.rainmore.linkedLists;
 
+import au.com.rainmore.extra.data.ListNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -39,12 +40,5 @@ public class No21MergeTwoSortedLists {
         return head.next;
     }
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
 
 }

@@ -1,10 +1,9 @@
-package au.com.rainmore.extra;
+package au.com.rainmore.linkedLists;
 
+import au.com.rainmore.extra.data.ListNode;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import au.com.rainmore.extra.No21MergeTwoSortedLists.ListNode;
 
 class No21MergeTwoSortedListsTest {
 

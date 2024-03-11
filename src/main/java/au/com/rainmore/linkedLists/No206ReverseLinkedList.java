@@ -1,4 +1,4 @@
-package au.com.rainmore.extra;
+package au.com.rainmore.linkedLists;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,6 +21,16 @@ public class No206ReverseLinkedList {
     public ListNode reverseList(ListNode head) {
         ListNode prev = null;
         ListNode current = head;
+        //       t = c.next
+        //       c.next = p
+        //       p = c
+        //       c = t
+        //
+
+        // p -> (1) -> (2) -> (3) -> (4) -> (5)
+        // p -> null, c -> (1)
+        // n -> (2) c.next = null, p = c, c = n
+
 
         while(current != null) {
             // must have a new variable to hold the `current.next`;
@@ -42,13 +52,13 @@ public class No206ReverseLinkedList {
             return head;
         }
 
-        ListNode newHead = head;
+        ListNode current = head;
         if (head.next != null) {
-            newHead = this.reverseList(head.next);
+            current = this.reverseList(head.next);
             head.next.next = head;
         }
         head.next = null;
-        return newHead;
+        return current;
     }
 
 }

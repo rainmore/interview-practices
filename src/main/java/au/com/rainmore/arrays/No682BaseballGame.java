@@ -1,9 +1,9 @@
-package au.com.rainmore.extra;
+package au.com.rainmore.arrays;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Arrays;
+import java.util.Stack;
 
 /**
  * <a href="https://leetcode.com/problems/baseball-game/description/">
@@ -12,6 +12,40 @@ import java.util.Arrays;
 public class No682BaseballGame {
 
     private Logger logger = LoggerFactory.getLogger(No682BaseballGame.class);
+
+    public int calPoints1(String[] operations) {
+        Stack<Integer> s = new Stack<>();
+        int sum = 0;
+        int tmp = 0;
+        for (int i = 0; i < operations.length; i++) {
+            switch (operations[i]) {
+                case "C":
+                    if (!s.isEmpty()) {
+                        tmp = s.pop();
+                        sum -= tmp;
+                    }
+                    break;
+                case "D":
+                    tmp = s.lastElement() * 2;
+                    s.push(tmp);
+                    sum += tmp;
+                    break;
+                case "+":
+                    tmp = s.lastElement() + s.elementAt(s.size() - 2);
+                    s.push(tmp);
+                    sum += tmp;
+                    break;
+                default:
+                    tmp = Integer.parseInt(operations[i]);
+                    s.push(tmp);
+                    sum += tmp;
+                    break;
+            }
+        }
+
+
+        return sum;
+    }
 
     /**
      * Time complexity: O(n)

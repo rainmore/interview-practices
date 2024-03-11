@@ -1,12 +1,10 @@
-package au.com.rainmore.extra;
+package au.com.rainmore.arrays;
 
 /**
  * <a href="https://leetcode.com/problems/sort-an-array/">
  * 206. Reverse Linked List</a>
  */
 public class No912SortAnArray {
-
-
     /**
      * Merge sort
      *
@@ -25,15 +23,14 @@ public class No912SortAnArray {
         int[] left = new int[n];
         int[] right = new int[m];
 
-        int i = 0, j = 0;
-        for (i = 0; i < n; i++)
+        for (int i = 0; i < n; i++)
             left[i] = nums[low + i];
 
-        for (i = 0; i < m; i++)
-            right[i] = nums[i + mid + 1];
+        for (int i = mid; i < m; i++)
+            right[i] = nums[i + 1];
 
-        i = 0;
-        j = 0;
+        int i = 0;
+        int j = 0;
         int k = low;
         while (i < n && j < m) {
             if (left[i] < right[j])
