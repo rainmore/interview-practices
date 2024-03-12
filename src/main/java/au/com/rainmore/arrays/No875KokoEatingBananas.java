@@ -1,5 +1,8 @@
-package au.com.rainmore.extra;
+package au.com.rainmore.arrays;
 
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
 
@@ -12,15 +15,17 @@ import java.util.Arrays;
  */
 public class No875KokoEatingBananas {
 
+    private Logger logger = LoggerFactory.getLogger(No875KokoEatingBananas.class);
+
     public int minEatingSpeed(int[] piles, int h) {
-        int l = 0;
+        int l = 1;
         int r = Arrays.stream(piles).max().getAsInt();
         int ans = r;
         while (l <= r) {
-            int m = l + (r - l) / 2;
+            int m = (l + r) / 2;
             int hours = 0;
             for (int i : piles) {
-                hours += Math.ceil(i / m);
+                hours += Math.ceil( 1.0 * i / m);
             }
 
             if (hours <= h) {
