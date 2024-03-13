@@ -60,36 +60,36 @@ public class TestJava {
         System.out.println(m3("fcrxzwscanmligyxyvym", "jxwtrhvujlmrpdoqbisbwhmgpmeoke"));
     }
 
-    private Integer m1(String a, String b) {
-        Integer result = 0;
-
-        List<Character> aList = a.chars().mapToObj(e -> (char)e).toList();
-        List<Character> bList = b.chars().mapToObj(e -> (char)e).toList();
-
-
-
-        for (int i = 0; i < aList.size(); i++) {
-            if (bList.contains(aList.get(i))) {
-                b.replace(aList.get(i), ' ');
-            }
-            else {
-                result += 1;
-            }
-        }
-
-        char[] aa = a.toCharArray();
-
-        for (int i = 0; i < aa.length; i++) {
-            if (bList.contains(aa[i])) {
-                b.replace(aList.get(i), ' ');
-            }
-            else {
-                result += 1;
-            }
-        }
-
-        return result;
-    }
+//    private Integer m1(String a, String b) {
+//        Integer result = 0;
+//
+//        List<Character> aList = a.chars().mapToObj(e -> (char)e).toList();
+//        List<Character> bList = b.chars().mapToObj(e -> (char)e).toList();
+//
+//
+//
+//        for (int i = 0; i < aList.size(); i++) {
+//            if (bList.contains(aList.get(i))) {
+//                b.replace(aList.get(i), ' ');
+//            }
+//            else {
+//                result += 1;
+//            }
+//        }
+//
+//        char[] aa = a.toCharArray();
+//
+//        for (int i = 0; i < aa.length; i++) {
+//            if (bList.contains(aa[i])) {
+//                b.replace(aList.get(i), ' ');
+//            }
+//            else {
+//                result += 1;
+//            }
+//        }
+//
+//        return result;
+//    }
 
     private Integer m2(String a, String b) {
         int result = 0;
