@@ -1,20 +1,22 @@
-package au.com.rainmore.extra;
+package au.com.rainmore.dynamicProgramming;
 
+
+import au.com.rainmore.dynamicProgramming.No509FibonacciNumber;
 
 /**
  * <a href="https://leetcode.com/problems/climbing-stairs/">
  * 70. Climbing Stairs</a>
  *
  * Brule Force
- *
  * Solutions:
  * DFS O(2^N)
- * DP O(n) -- Bottom up (see {@link No509FibonacciNumber}
  *
  */
 public class No70ClimbingStairs {
 
     /**
+     * DP O(n) -- Bottom up
+     *
      * Time complexity: O(n)
      * Space complexity: O(1)
      */
@@ -31,5 +33,21 @@ public class No70ClimbingStairs {
         return l;
     }
 
+    /**
+     * DP O(n) -- Bottom up
+     *
+     * Time complexity: O(n)
+     * Space complexity: O(1)
+     */
+    public int climbStairs2(int n) {
+        int[] c = new int[n + 2];
+        c[n + 1] = 1;
+
+        for (int i = n - 1; i >= 0; i--) {
+            c[i] = c[i + 1] + c[i + 2];
+        }
+
+        return c[0];
+    }
 
 }

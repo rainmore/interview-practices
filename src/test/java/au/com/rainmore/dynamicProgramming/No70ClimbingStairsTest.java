@@ -1,4 +1,4 @@
-package au.com.rainmore.extra;
+package au.com.rainmore.dynamicProgramming;
 
 import org.junit.jupiter.api.Test;
 

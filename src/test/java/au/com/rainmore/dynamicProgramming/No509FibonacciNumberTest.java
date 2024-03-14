@@ -1,5 +1,6 @@
-package au.com.rainmore.extra;
+package au.com.rainmore.dynamicProgramming;
 
+import au.com.rainmore.dynamicProgramming.No509FibonacciNumber;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
