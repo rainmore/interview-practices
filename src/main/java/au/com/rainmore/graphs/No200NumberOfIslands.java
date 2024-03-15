@@ -4,6 +4,10 @@ package au.com.rainmore.graphs;
 /**
  * <a href="https://leetcode.com/problems/number-of-islands/description/">
  * 200. Number of Islands</a>
+ *
+ * Time O(4 ^ (n * m()
+ * Space O(n * m)
+ *
  */
 public class No200NumberOfIslands {
 
@@ -11,7 +15,7 @@ public class No200NumberOfIslands {
         int c = 0;
 
         for (int i = 0; i < grid.length; i++) {
-            for (int j = 0; j < grid.length; j++) {
+            for (int j = 0; j < grid[0].length; j++) {
                 if (grid[i][j] == '1') {
                     dfs(grid, i, j);
                     c++;

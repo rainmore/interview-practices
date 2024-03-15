@@ -36,4 +36,18 @@ class No200NumberOfIslandsTest {
         assertEquals(3, result);
     }
 
+    @Test
+    void test3() {
+        char[][] data = new char[][]{
+                new char[]{'1'},
+                new char[]{'1'},
+
+        };
+
+        int result = test.numIslands(data);
+
+        assertEquals(1, result);
+    }
+
+
 }
