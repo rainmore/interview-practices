@@ -31,6 +31,7 @@ tasks.run.configure {
 }
 
 dependencies {
+    implementation("org.apache.commons:commons-lang3:${project.properties["commons-lang3.version"]!!}")
     implementation("org.slf4j:slf4j-api:${project.properties["slf4j.version"]!!.toString()}")
     implementation("org.slf4j:slf4j-simple:${project.properties["slf4j.version"]!!.toString()}")
     testImplementation(platform("org.junit:junit-bom:${project.properties["junit.version"]!!.toString()}"))
