@@ -19,7 +19,7 @@ public class No105KthSmallestElementInABST {
             return null;
         }
 
-        HashMap<Integer, Integer> map = new HashMap();
+        HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < inorder.length; i++) {
             map.put(inorder[i], i);
         }
