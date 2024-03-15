@@ -26,6 +26,11 @@ application {
     mainClass.set(listOf(project.group.toString(), "TestJava").joinToString("."))
 }
 
+tasks.withType<JavaCompile> {
+    options.compilerArgs.add("-Xlint:unchecked")
+}
+
+
 tasks.run.configure {
     standardInput = System.`in`
 }
