@@ -19,7 +19,7 @@ public class No78Subsets {
     }
 
     private void sub(int[] nums, int idx, List<List<Integer>> results, List<Integer> subset) {
-        List s1 = new ArrayList<>();
+        List<Integer> s1 = new ArrayList<>();
         if (idx == nums.length) {
             s1.addAll(subset);
             results.add(s1);

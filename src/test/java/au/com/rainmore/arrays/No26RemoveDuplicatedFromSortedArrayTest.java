@@ -1,4 +1,4 @@
-package au.com.rainmore;
+package au.com.rainmore.arrays;
 
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;

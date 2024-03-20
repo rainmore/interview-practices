@@ -1,11 +1,9 @@
-package au.com.rainmore;
+package au.com.rainmore.arrays;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 /**
  * <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/">
