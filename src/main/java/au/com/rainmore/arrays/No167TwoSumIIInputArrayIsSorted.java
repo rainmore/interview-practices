@@ -1,8 +1,5 @@
 package au.com.rainmore.arrays;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * <a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/">
  * 167. Two Sum II - Input Array Is Sorted</a>
