@@ -41,4 +41,26 @@ class No853CarFleetTest {
         assertEquals(1, result);
     }
 
+    @Test
+    void test4() {
+        int target = 10;
+        int[] position = new int[]{6,8};
+        int[] speed = new int[]{3,2};
+
+        int result = test.carFleet(target, position, speed);
+
+        assertEquals(2, result);
+    }
+
+    @Test
+    void test5() {
+        int target = 10;
+        int[] position = new int[]{8,3,7,4,6,5};
+        int[] speed = new int[]{4,4,4,4,4,4};
+
+        int result = test.carFleet(target, position, speed);
+
+        assertEquals(6, result);
+    }
+
 }
