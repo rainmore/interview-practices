@@ -26,6 +26,11 @@ application {
     mainClass.set(listOf(project.group.toString(), "TestJava").joinToString("."))
 }
 
+tasks.named<Wrapper>("wrapper").configure {
+    distributionType = Wrapper.DistributionType.ALL
+    gradleVersion = project.properties["gradle.version"] as String
+}
+
 tasks.withType<JavaCompile> {
     options.compilerArgs.add("-Xlint:unchecked")
 }
